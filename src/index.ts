@@ -6,6 +6,7 @@ import selectionSort from "./algorithms/SelectionSort/SelectionSort";
 import {
   sumRecursion,
   arrayCount,
+  maximumInArray,
 } from "./algorithms/recursion/problemsRecursion";
 
 dotenv.config();
