@@ -1,9 +1,15 @@
-const quickSort = (arr: number[]): number[] => {
+const quickSort = (arr: number[]): any => {
   if (arr.length < 2) return arr;
 
   let pivot = arr[Math.floor(arr.length / 2)];
-  let low = arr.filter((e) => e < pivot);
-  let high = arr.filter((e) => e > pivot);
+
+  let low = [];
+  let high = [];
+
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] === pivot) continue;
+    arr[i] < pivot ? low.push(arr[i]) : high.push(arr[i]);
+  }
 
   return [...quickSort(low), pivot, ...quickSort(high)];
 };
