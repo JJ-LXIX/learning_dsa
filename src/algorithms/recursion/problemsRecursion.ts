@@ -17,3 +17,20 @@ const maximumInArray = (arr: number[]): number => {
   return sub_max;
 };
 
+const binarySearchRecursive = (
+  arr: number[],
+  target: number,
+  high: number,
+  low: number
+): string => {
+  if (low > high) return "Number not found in array";
+
+  let mid = Math.floor((high + low) / 2);
+  if (arr[mid] == target) return `Number found at index ${mid}`;
+
+  if (arr[mid] < target)
+    return binarySearchRecursive(arr, target, high, mid + 1);
+  else return binarySearchRecursive(arr, target, mid - 1, low);
+};
+
+export { sumRecursion, arrayCount, maximumInArray, binarySearchRecursive };

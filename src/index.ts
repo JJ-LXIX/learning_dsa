@@ -7,6 +7,7 @@ import {
   sumRecursion,
   arrayCount,
   maximumInArray,
+  binarySearchRecursive,
 } from "./algorithms/recursion/problemsRecursion";
 
 dotenv.config();
@@ -14,9 +15,9 @@ dotenv.config();
 const app: Express = express();
 const port = process.env.PORT;
 
-const arr = [1, 3, 5, 6, 7, 8, 9, 13, 14, 14];
+const arr = [1, 3, 5, 6, 7, 8, 9, 13, 14, 15, 19];
 // const arr = [7, 1, 5, 3, 14, 6, 15, 13, 8, 9];
 
-console.log(sumRecursion(arr));
+console.log(binarySearchRecursive(arr, 3, arr.length - 1, 0));
 
 app.listen(port);
