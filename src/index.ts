@@ -5,6 +5,7 @@ import binarySearch from "./algorithms/binarySearch/binarySearch";
 import selectionSort from "./algorithms/SelectionSort/SelectionSort";
 import {
   sumRecursion,
+  arrayCount,
 } from "./algorithms/recursion/problemsRecursion";
 
 dotenv.config();
