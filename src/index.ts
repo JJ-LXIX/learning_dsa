@@ -3,7 +3,9 @@ import dotenv from "dotenv";
 
 import binarySearch from "./algorithms/binarySearch/binarySearch";
 import selectionSort from "./algorithms/SelectionSort/SelectionSort";
-import sumRecursion from "./algorithms/recursion/sumRecursion";
+import {
+  sumRecursion,
+} from "./algorithms/recursion/problemsRecursion";
 
 dotenv.config();
 
