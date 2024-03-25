@@ -1,4 +1,4 @@
-const quickSort = (arr: number[]): any => {
+const quickSort = (arr: number[]): number[] => {
   if (arr.length < 2) return arr;
 
   let pivot = arr[Math.floor(arr.length / 2)];
