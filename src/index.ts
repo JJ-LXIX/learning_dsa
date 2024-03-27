@@ -10,6 +10,7 @@ import {
   maximumInArray,
   binarySearchRecursive,
 } from "./algorithms/recursion/problemsRecursion";
+import bubbleSort from "./algorithms/bubbleSort/bubbleSort";
 
 dotenv.config();
 
@@ -19,6 +20,6 @@ const port = process.env.PORT;
 // const arr = [1, 3, 5, 6, 7, 8, 9, 13, 14, 15, 19];
 const arr = [7, 1, 5, 3, 14, 6, 15, 13, 8, 9];
 
-console.log(quickSort(arr));
+console.log(bubbleSort(arr));
 
 app.listen(port);
